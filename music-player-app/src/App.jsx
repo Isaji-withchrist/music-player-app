@@ -12,6 +12,7 @@ import PremiumCard from "./components/PremiumCard";
 import Recent from "./pages/Recent";
 import Favorites from "./pages/Favorites";
 import Trending from "./pages/Trending";
+import LOGO from "../assets/LOGO.png"
 
 export default function App() {
   return (
@@ -19,9 +20,11 @@ export default function App() {
       {/* LEFT SIDEBAR */}
       <aside className="w-20 bg-neutral-200/70 backdrop-blur flex flex-col items-center py-6">
         {/* Logo / wordmark */}
-        <div className="mb-8 font-extrabold tracking-wider rotate-[-10deg]">PLAY</div>
+        <div className="mb-8 font-extrabold tracking-wider rotate-[-10deg]">
+          <img src={LOGO}/> logo
+        </div>
 
-        <nav className="flex flex-col gap-8">
+        <nav className="flex flex-col gap-12">
           <IconLink to="/" icon={<Home />} label="Home" />
           <IconLink to="/recent" icon={<Clock />} label="Recent" />
           <IconLink to="/favorites" icon={<Heart />} label="Favorites" />
