@@ -2,7 +2,7 @@ import { Crown, Check } from "lucide-react";
 
 export default function PremiumCard() {
   return (
-    <div className="bg-gradient-to-br from-blue-600 to-indigo-600 text-white rounded-2xl p-6 shadow-lg">
+    <div className="bg-gradient-to-br from-gray-600 to-black-600 text-white rounded-2xl p-6 shadow-lg">
       <div className="flex items-center gap-2 mb-2">
         <Crown className="w-5 h-5" />
         <h3 className="text-lg font-bold">Go Premium</h3>
@@ -23,7 +23,7 @@ export default function PremiumCard() {
         </li>
       </ul>
 
-      <button className="w-full bg-white text-blue-700 font-semibold py-2 rounded-xl hover:bg-blue-50 transition">
+      <button className="w-full bg-white text-gray-700 font-semibold py-2 rounded-xl hover:bg-blue-50 transition">
         Get Premium
       </button>
     </div>
